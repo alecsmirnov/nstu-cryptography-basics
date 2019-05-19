@@ -68,7 +68,4 @@ private:
 	std::vector<elem_t> code_table;		// Кодовая таблица Хаффмана (для кодирования)
 };
 
-
-
-
 #endif
