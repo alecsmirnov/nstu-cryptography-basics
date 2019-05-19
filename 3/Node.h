@@ -15,7 +15,6 @@ struct Node {
 
 	~Node() {delete left; delete right;}
 
-
 	wchar_t symbol;			// Кодируемый символ алфавита
 	double frequency;		// Вероятность кодируемого символа
 
