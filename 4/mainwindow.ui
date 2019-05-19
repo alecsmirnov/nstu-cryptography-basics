@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>744</width>
+    <height>378</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>747</width>
+    <height>378</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Шифр Виженера</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTextEdit" name="sourceText_TE">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>33</y>
+      <width>361</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>Исходный текст</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="resultText_TE">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>378</x>
+      <y>33</y>
+      <width>361</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>Результат</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="keywords_LE">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>266</y>
+      <width>361</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>Ключевые слова</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="sourceTextFilename_LE">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>10</y>
+      <width>171</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Файл с исходным текстом</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="resultTextFilename_LE">
+    <property name="geometry">
+     <rect>
+      <x>568</x>
+      <y>10</y>
+      <width>171</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Файл с результатом</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="keywordsFilename_LE">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>243</y>
+      <width>171</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>Файл ключевыми словами</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="readSourceText_B">
+    <property name="geometry">
+     <rect>
+      <x>179</x>
+      <y>10</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Прочитать</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="writeResultText_B">
+    <property name="geometry">
+     <rect>
+      <x>488</x>
+      <y>10</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Записать</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="readKeywords_B">
+    <property name="geometry">
+     <rect>
+      <x>179</x>
+      <y>243</y>
+      <width>80</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Прочитать</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="encrypt_B">
+    <property name="geometry">
+     <rect>
+      <x>249</x>
+      <y>320</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Зашифровать</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="decrypt_B">
+    <property name="geometry">
+     <rect>
+      <x>378</x>
+      <y>320</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Расшифровать</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>744</width>
+     <height>25</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
