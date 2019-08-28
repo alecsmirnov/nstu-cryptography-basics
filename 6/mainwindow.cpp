@@ -4,7 +4,7 @@
 #include <QElapsedTimer>
 #include <ctime>
 
-#define NANOSECOND 1e+9
+static constexpr double NANOSECOND = 1e+9;
 
 MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
 	ui->setupUi(this);
