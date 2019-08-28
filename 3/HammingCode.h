@@ -5,11 +5,11 @@
 #include <vector>
 
 namespace HammingStd {		// Элемент таблицы Хэмминга
-struct elem_t {
-    int sign;				// Символ алфавита
-    std::string code;		// Кодовое слово
-    std::string code_hash;
-};
+	struct elem_t {
+		int sign;				// Символ алфавита
+		std::string code;		// Кодовое слово
+		std::string code_hash;
+	};
 }
 
 // Класс для работы с алгоритмом Хэмминга
