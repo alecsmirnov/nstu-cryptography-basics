@@ -27,7 +27,11 @@ public:
     std::vector<std::size_t> getErrsPos() const;
 
     void clearTable();
-
+	
+private:
+	char chrToInt(char x);
+	char intToChr(char x);
+	
 private:
     std::uint8_t n = 0;
     std::uint8_t r = 0;
@@ -38,5 +42,13 @@ private:
 
     std::vector<std::size_t> errs_pos;
 };
+
+inline char HammingCode::chrToInt(char x) {
+	return x - '0';
+}
+
+inline char HammingCode::intToChr(char x) {
+	return x + '0';
+}
 
 #endif
