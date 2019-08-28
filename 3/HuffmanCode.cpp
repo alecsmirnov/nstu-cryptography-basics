@@ -1,4 +1,4 @@
-﻿#include "HuffmanCode.h"
+#include "HuffmanCode.h"
 
 #include <iostream>
 #include <sstream>
@@ -6,12 +6,12 @@
 #include <cmath>
 #include <map>
 
+static constexpr wchar_t EVEN = 0;
+
 #define chrToInt(x) (x - '0')
 #define intToChr(x) (x + '0')
 
 #define isPowerOf2(x) (0 < x && !(x & (x - 1)))
-
-#define EVEN 0
 
 using namespace HuffmanStd;
 
