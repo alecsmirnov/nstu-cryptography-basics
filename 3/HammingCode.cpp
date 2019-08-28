@@ -5,9 +5,6 @@
 #include <fstream>
 #include <cstdlib>
 
-#define chrToInt(x) (x - '0')
-#define intToChr(x) (x + '0')
-
 using namespace HammingStd;
 
 void HammingCode::readAlphabet(std::string alphabet, std::string codes) {
