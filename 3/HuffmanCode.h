@@ -70,10 +70,26 @@ private:
 
 	// Проверка узла, является ли он листом
 	bool isLeaf(Node* tree_node) const;
+	
+	char chrToInt(char x);
+	char intToChr(char x);
+	bool isPowerOf2(std::vector<HuffmanStd::elem_t>::size_type x);
 
 private:
 	Node* code_tree = nullptr;						// Кодовое дерево Хаффмана (для декодирования)
 	std::vector<HuffmanStd::elem_t> code_table;		// Кодовая таблица Хаффмана (для кодирования)
 };
+
+inline char HuffmanCode::chrToInt(char x) {
+	return x - '0';
+}
+
+inline char HuffmanCode::intToChr(char x) {
+	return x + '0';
+}
+
+inline bool HuffmanCode::isPowerOf2(std::vector<HuffmanStd::elem_t>::size_type x) {
+	return 0 < x && !(x & (x - 1));
+}
 
 #endif
