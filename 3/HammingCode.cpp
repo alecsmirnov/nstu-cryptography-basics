@@ -179,7 +179,7 @@ void HammingCode::clearTable() {
     std::vector<elem_t>().swap(code_table);
 
     r = n = 0;
-    for(std::uint8_t i = 0; i != r; ++i)
+    for (std::uint8_t i = 0; i != r; ++i)
 		delete[] H[i];
     delete[] H;
     H = nullptr;
