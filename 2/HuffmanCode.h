@@ -5,8 +5,6 @@
 #include "CustomPriorityQueue.h"
 
 #include <vector>
-#include <iostream>
-#include <fstream>
 
 // Элемент таблицы Хаффмана
 struct elem_t {	
