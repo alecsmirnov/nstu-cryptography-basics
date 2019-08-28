@@ -38,9 +38,9 @@ private:
 	std::string decrypt(std::string encrypted_text, std::string key) const;
 
 	// Преобразовать символ в число
-	std::uint8_t charToInt(char x) const;
+	char chrToInt(char x);
 	// Преобразовать число в символ
-	char intToChar(std::uint8_t x) const;
+	char intToChr(char x);
 
 	// Запомнить позиции разделяющих символов
 	void rememberSpaces(std::string text);
@@ -56,5 +56,13 @@ private:
 	std::vector<std::string> keywords;
 	std::vector<std::string::size_type> spaces;
 };
+
+inline char VigenereCipher::chrToInt(char x) {
+	return x - '0';
+}
+
+inline char VigenereCipher::intToChr(char x) {
+	return x + '0';
+}
 
 #endif
