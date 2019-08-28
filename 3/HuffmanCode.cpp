@@ -8,11 +8,6 @@
 
 static constexpr wchar_t EVEN = 0;
 
-#define chrToInt(x) (x - '0')
-#define intToChr(x) (x + '0')
-
-#define isPowerOf2(x) (0 < x && !(x & (x - 1)))
-
 using namespace HuffmanStd;
 
 // Прочитать текстовый файл и представить его содержимое в виде строки
