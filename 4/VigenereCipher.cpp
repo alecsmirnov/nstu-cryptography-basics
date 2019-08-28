@@ -91,16 +91,6 @@ std::string VigenereCipher::decrypt(std::string encrypted_text, std::string key)
 	return decrypted_text;
 }
 
-// Преобразовать символ в число
-std::uint8_t VigenereCipher::charToInt(char x) const {
-	return x - static_cast<char>(alphabet);
-}
-
-// Преобразовать число в символ
-char VigenereCipher::intToChar(std::uint8_t x) const {
-	return x + static_cast<char>(alphabet);
-}
-
 // Запомнить позиции разделяющих символов
 void VigenereCipher::rememberSpaces(std::string text) {
 	for (std::string::size_type i = 0; i != text.length(); ++i)
