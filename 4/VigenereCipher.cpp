@@ -1,6 +1,6 @@
 #include "VigenereCipher.h"
 
-#define SPACE ' '			// Разделяющий символ в тексте
+static constexpr char SPACE = ' ';			// Разделяющий символ в тексте
 
 // Задать алфавит сообщения
 void VigenereCipher::setAlphabet(Alphabet alphabet) {
