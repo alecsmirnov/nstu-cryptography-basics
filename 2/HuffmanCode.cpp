@@ -4,7 +4,7 @@
 #include <fstream>
 #include <map>
 
-#define MENU_EXIT '0'		// Константа для определения символа выхода из программы
+static constexpr char MENU_EXIT ='0';		// Константа для определения символа выхода из программы
 
 // Функция для вывода пунктов меню на экран
 static void menuOptions(std::string text, std::string alpha, std::string freq, std::string coded) {
