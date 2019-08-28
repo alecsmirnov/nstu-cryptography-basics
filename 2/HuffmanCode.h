@@ -27,7 +27,7 @@ public:
 	// 1) файл с кодируемым алфавитом;
 	// 2) Файл с вероятностями символов алфавита.
 	void encodeAlphabet(const std::string alphabet_file = "alpha.txt", const std::string frequency_file = "freq.txt",
-				const std::string output_file = "codes.txt");
+						const std::string output_file = "codes.txt");
 
 	// Метод, отвечающий за декодирование данных. На вход подаётся фай с закодированным текстом
 	void decode(const std::string coded_file = "coded.txt", const std::string output_file = "decoded.txt");
