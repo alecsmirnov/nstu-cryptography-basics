@@ -8,11 +8,11 @@
 #include <vector>
 
 namespace HuffmanStd {		// Элемент таблицы Хаффмана
-struct elem_t {
-	wchar_t sign;			// Символ алфавита
-	double frequency;		// Вероятность символа
-	std::wstring code;		// Кодовое слово
-};
+	struct elem_t {
+		wchar_t sign;			// Символ алфавита
+		double frequency;		// Вероятность символа
+		std::wstring code;		// Кодовое слово
+	};
 }
 
 // Класс для работы с алгоритмом Хаффмана
