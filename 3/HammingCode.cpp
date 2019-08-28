@@ -180,7 +180,7 @@ void HammingCode::clearTable() {
 
     r = n = 0;
     for(std::uint8_t i = 0; i != r; ++i)
-	delete[] H[i];
+		delete[] H[i];
     delete[] H;
     H = nullptr;
 
